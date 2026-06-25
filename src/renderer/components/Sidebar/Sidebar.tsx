@@ -206,7 +206,7 @@ export function Sidebar({
                 type="button"
                 onClick={onSearchClick}
                 className="flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground">
-                <Search size={16} strokeWidth={1.6} />
+                <Search size={18} strokeWidth={1.6} />
               </button>
             </SidebarTooltip>
           </div>

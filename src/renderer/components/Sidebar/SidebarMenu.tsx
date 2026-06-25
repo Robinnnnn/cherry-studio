@@ -39,7 +39,7 @@ function IconMenuItems({ items, activeItem, activeTabId, onItemClick, onMiniAppT
                 className={`relative flex h-8 w-8 items-center justify-center rounded-full transition-all duration-150 [&_svg]:text-current ${
                   isActive ? 'bg-accent text-foreground' : 'text-foreground/80 hover:bg-accent/60 hover:text-foreground'
                 }`}>
-                <Icon size={16} strokeWidth={1.6} />
+                <Icon size={18} strokeWidth={1.6} />
               </button>
             </SidebarTooltip>
 

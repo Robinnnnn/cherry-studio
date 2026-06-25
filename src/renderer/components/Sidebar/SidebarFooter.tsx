@@ -35,14 +35,14 @@ function IconFooter({ user, actions, extensionsLabel, onExtensionsClick }: Foote
             type="button"
             onClick={onExtensionsClick}
             className="flex h-9 w-9 items-center justify-center rounded-full text-foreground/80 transition-colors hover:bg-accent/60 hover:text-foreground [&_svg]:text-current">
-            <Columns2 size={16} strokeWidth={1.6} />
+            <Columns2 size={18} strokeWidth={1.6} />
           </button>
         </SidebarTooltip>
       )}
       {actions}
       {user && (
         <div className="cursor-pointer" onClick={user.onClick}>
-          <UserAvatar user={user} className="h-7 w-7" />
+          <UserAvatar user={user} className="h-8 w-8" />
         </div>
       )}
     </div>
