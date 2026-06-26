@@ -6817,7 +6817,7 @@
         "sync_will_deprecate": "将标记为弃用"
       },
       "more_actions": "更多模型列表操作",
-      "not_enabled_models": "未启用",
+      "not_enabled_models": "已禁用",
       "page_description": "为助手对话、快速操作和翻译设置默认使用的模型",
       "provider_id": "服务商 ID",
       "provider_key_add_confirm": "是否要为 {{provider}} 添加 API 密钥？",
