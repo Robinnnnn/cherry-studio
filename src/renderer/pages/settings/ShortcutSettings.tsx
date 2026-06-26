@@ -414,7 +414,7 @@ const ShortcutSettings: FC = () => {
               className={cn(
                 'min-h-9 items-center gap-1 rounded-lg border border-transparent bg-transparent px-2 py-1 transition-colors hover:border-border/60 hover:bg-muted/35',
                 hasSystemConflict && 'border-destructive',
-                isEditable ? 'cursor-pointer hover:bg-accent/60' : 'cursor-not-allowed opacity-50'
+                isEditable ? 'cursor-pointer hover:bg-accent/60' : 'cursor-not-allowed'
               )}
               onClick={() => isEditable && handleAddShortcut(record.key)}>
               {displayKeys.map((key) => (
