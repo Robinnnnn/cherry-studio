@@ -12,7 +12,7 @@ import { useInfiniteFlatItems, useInfiniteQuery, useQuery } from '@data/hooks/us
 import { loggerService } from '@logger'
 import { isMac } from '@renderer/config/constant'
 import { ipcApi } from '@renderer/ipc'
-import { safeOpen } from '@renderer/services/safeOpen'
+import { safeOpen } from '@renderer/utils/file/safeOpen'
 import type { FileEntry, FileEntryId } from '@shared/data/types/file'
 import type { OutputFor } from '@shared/ipc/types'
 import type { FilePath, FileType } from '@shared/types/file'
