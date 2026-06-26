@@ -301,7 +301,7 @@ const BinaryToolPresetCard: FC<{
             {present && (
               <div className="mt-0.5 flex flex-wrap items-center gap-1">
                 {installedVersion && (
-                  <Badge variant="secondary" className="gap-1 px-1.5 py-0 text-[11px] leading-4">
+                  <Badge variant="highlight" className="gap-1 px-1.5 py-0 text-[11px] leading-4">
                     v{installedVersion}
                   </Badge>
                 )}
@@ -351,7 +351,7 @@ const BinaryToolPresetCard: FC<{
       <div className="mt-3 flex items-center gap-3">
         <button
           type="button"
-          className="inline-flex items-center gap-1 text-[11px] text-muted-foreground/70 transition-colors hover:text-foreground"
+          className="inline-flex items-start gap-1 text-left text-[11px] text-muted-foreground/70 transition-colors hover:text-foreground"
           onClick={() => void window.api.openWebsite(tool.repoUrl)}>
           <ExternalLink className="size-3" />
           {tool.repoUrl.replace('https://github.com/', '')}
@@ -378,14 +378,8 @@ const BinaryToolPresetCard: FC<{
       </div>
 
       {source !== 'managed' && (
-        <div className="mt-3">
-          <Button
-            variant="outline"
-            size="sm"
-            className="h-7 w-full gap-1 font-medium text-xs"
-            onClick={onInstall}
-            disabled={installing}
-            loading={installing}>
+        <div className="mt-auto pt-3">
+          <Button variant="outline" size="sm" onClick={onInstall} disabled={installing} loading={installing}>
             {!installing && <Download className="size-3.5" />}
             {installing
               ? t('settings.plugins.installing')
