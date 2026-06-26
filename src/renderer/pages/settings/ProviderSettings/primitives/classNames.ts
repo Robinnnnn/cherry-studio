@@ -47,12 +47,6 @@ const sectionHeadingBase =
 
 export const sectionHeadingClasses = cn(sectionHeadingBase, 'font-medium')
 
-/** Authentication section layout: slot stack only; fields provide their own surfaces. */
-export const authConnectionClasses = {
-  shell: '',
-  body: 'flex flex-col gap-2 rounded-[length:var(--radius-xl)] border border-[color:var(--color-border-fg-hairline)] px-3 py-2.5'
-} as const
-
 /**
  * Provider detail column (`ProviderSetting.tsx`) — padding + gap between Authentication + ModelList.
  */
