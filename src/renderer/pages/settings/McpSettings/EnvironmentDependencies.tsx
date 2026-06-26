@@ -378,7 +378,7 @@ const BinaryToolPresetCard: FC<{
       </div>
 
       {source !== 'managed' && (
-        <div className="mt-3 border-border border-t pt-3">
+        <div className="mt-3">
           <Button
             variant="outline"
             size="sm"
