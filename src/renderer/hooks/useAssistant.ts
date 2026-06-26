@@ -253,8 +253,8 @@ export function composeDefaultAssistant(modelId: UniqueModelId | null): Assistan
   return {
     id: DEFAULT_ASSISTANT_ID,
     name: i18n.t('chat.default.name'),
-    emoji: '😀',
-    prompt: '',
+    emoji: DEFAULT_ASSISTANT_EMOJI,
+    prompt: DEFAULT_ASSISTANT_PROMPT,
     description: '',
     settings: DEFAULT_ASSISTANT_SETTINGS,
     modelId,
